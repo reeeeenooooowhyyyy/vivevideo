@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+
+<link rel="shortcut icon" type="image/jpg" href="/favicon.jpg"/>
+
+<style id="webmakerstyle">
+html { 
+        background-color: black;
+     font-family: Arial, Helvetica, sans-serif; color: white; text-align: center; } #button { text-align: right;} #img.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  text-align: right;
+
+
+}
+.myButton {
+	background-color:#ff0000;
+	-webkit-border-radius:28px;
+	-moz-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #ff0000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+  text-align: right;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ff0000;
+}
+.myButton:hover {
+	background-color:#ff0000;
+  text-align: right;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+  text-align: right;}
+  #btndiv {
+    text-align: right;
+  }
+
+#chnnlbtn{
+  text-align: left;
+  margin-top: -50px;
+}
+
+  #searchbar{ 
+        text-align:center;
+        padding:15px; 
+        border-radius: 10px; 
+      } 
+    
+      input[type=text] { 
+         width: 30%; 
+         -webkit-transition: width 0.15s ease-in-out; 
+         transition: width 0.15s ease-in-out; 
+      } 
+    
+      /* When the input field gets focus, 
+           change its width to 100% */
+      input[type=text]:focus { 
+        width: 70%; 
+      } 
+     </style>
+      
+</style>
+</head>
+<body>
+    <title>VIVE VIDEO</title>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"></style></head>
+    <body class="c1"> <!-- input tag -->
+      <input id="searchbar" onkeyup="search_animal()" type="text"
+          name="search" placeholder="Search videos.."> 
+      <div id="btndiv">
+      <a style"text-align: right;" href="https://forms.gle/oiU1BCBCYzphpMDP7" class="myButton">Upload a video</a>
+      </div>
+      <div id="chnnlbtn">
+      <a style"text-align: left;" href="chnnl.html" class="myButton">Search for a channel</a></div>
+      <div id="titlediv"><p class="c3"><span class="titlediv">VIVE VIDEO<br></span></p><p class="c3"><span class="c0">Recommended
+    </span></p></div>
+    <!-- ordered list -->
+    
+      <li class="animals"><a href="Video1.html"><img src="Thumbnail1.jpg" />
+      <h1>YTP: Follow Your Fart</h1></a></li> 
+      <li class="animals"><a href="Video2.html"><img src="Jay.jpg" />
+      <h1>YTP: Jay Sees PopEyes</h1></a></li> 
+      <li class="animals"><a href="Video3.html"><img src="Thumb3.jpg" />
+      <h1>Micheal rosen spits a boethiath reference for lulz</h1></a></li> 
+      <li class="animals"><a href="Video4.html"><img src="Thumb4.jpg" />
+      <h1>Living room</h1></a></li> 
+      <li class="animals"><a href="Video5.html"><img src="Thumb5.jpg" />
+      <h1>Morgz flips off his scientists</h1></a></li> 
+      <li class="animals"><a href="Video6.html"><img src="Screenshot 2020-09-10 232436.jpg" />
+      <h1>YTP:Guava juice becomes a serial killer</h1></a></li> 
+      <li class="animals"><a href="Video7.html"><img src="sos.jpg" />
+      <h1>YTP:Tourettes guys gets stuck in a puff daddy toilet and dies in a explosion</h1></a></li> 
+      <li class="animals"><a href="vid8.html"><img src="Screenshot 2020-09-17 170548.jpg" />
+      <h1>YTP:Morgzs drinks</h1></a></li> 
+      <li class="animals"><a href="vid9.html"><img src="Screenshot 2020-09-22 230706.jpg" />
+        <h1>Nym nyms and nyomnyoms vs. tom toms and nico nicos</h1></a></li>
+        <li class="animals"><a href="vid10.html"><img src="Screenshot 2020-09-29 193331.jpg" /><h1>YTP: Nuggies in ma mouth</h1></a></li>
+    </ol>
+	
+	<a href="https://vivevideofamfriendly.netlify.app/">
+	<p>Family friendly mode</p>
+	</a>
+  <div id="img.sticky">
+    <a href="index.html">
+      <img src="Vivevidlog.jpg" />
+    </a>
+    </div>
+    <form name="contact" netlify >
+      <p>
+        <label>Name <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Email <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
+
+<script>// JavaScript code 
+        function search_animal() { 
+            let input = document.getElementById('searchbar').value 
+            input=input.toLowerCase(); 
+            let x = document.getElementsByClassName('animals'); 
+              
+            for (i = 0; i < x.length; i++) {  
+                if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+                    x[i].style.display="none"; 
+                } 
+                else { 
+                    x[i].style.display="list-item";                  
+                } 
+            } 
+        }</script>
+
+<script src="filesystem:chrome-extension://lkfkkhfhhdkiemehlpkgjeojomhpccnh/temporary/script.js">
+</script>
+</body>
+</html>

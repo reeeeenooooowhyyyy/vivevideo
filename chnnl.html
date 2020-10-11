@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VIVEVIDEO:Channel Search</title>
+<style>
+    html {
+        background-color:black;
+        text-align:center;
+        font-family:Arial;
+        color:white;
+    }
+    
+  #searchbar{ 
+        padding:15px; 
+        border-radius: 10px; 
+        text-align:center;
+      } 
+    
+      input[type=text] { 
+         width: 30%; 
+         -webkit-transition: width 0.15s ease-in-out; 
+         transition: width 0.15s ease-in-out; 
+      } 
+    
+      /* When the input field gets focus, 
+           change its width to 100% */
+      input[type=text]:focus { 
+        width: 70%; 
+      } 
+    
+     #list{ 
+       font-size:  1.5em; 
+       text-align: center; 
+      } 
+    
+   .animals{ 
+      display: list-item;     
+     }
+</style>
+<script>
+ function search_animal() { 
+            let input = document.getElementById('searchbar').value 
+            input=input.toLowerCase(); 
+            let x = document.getElementsByClassName('animals'); 
+              
+            for (i = 0; i < x.length; i++) {  
+                if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+                    x[i].style.display="none"; 
+                } 
+                else { 
+                    x[i].style.display="list-item";                  
+                } 
+            } 
+        }
+</script>
+</head>
+<body>
+    
+<!-- input tag -->
+<input id="searchbar" onkeyup="search_animal()" type="text"
+name="search" placeholder="Search channels.."> 
+
+<li class="animals"><a href="xfacevivevideo.html"><img src="unnamed (1).gif" />
+<h1>xfacevivevideo</h1></a></li>
+<li class="animals"><a href="cnttus.html"><img src="unnamed.gif" /><h1>TitusNymNym</h1></a></li>
+<a href="index.html">
+    <img src="Back.png" />
+</a>
+</body>
+</html>
